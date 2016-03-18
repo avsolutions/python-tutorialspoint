@@ -6,6 +6,7 @@
 
 # input a given string
 str_len = 0
+str = ""
 while str_len < 10:
     str = input("Please enter a string with more than 10 characters:")
     str_len = len(str)
@@ -21,3 +22,10 @@ print("Number of e character in the string:", str.count("e"))
 print("String length:", len(str))
 print("UPPER string:", str.upper())
 print("LOWER string:", str.lower())
+
+# isdigit and isnumber
+str_tmp = u"123455"
+if str_tmp.isnumeric():
+    print("isnumeric = TRUE")
+if str_tmp.isdigit():
+    print("isdigit = TRUE")
